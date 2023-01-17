@@ -1,0 +1,54 @@
+<header class="main-header">
+  <div class="info-destaque">
+    <a href=""
+      ><span><i class="fa-brands fa-pix"></i></span><br />
+      <div class="info-texto">
+        <strong>Pagamentos via PIX com 10% de desconto!</strong>
+      </div>
+    </a>
+  </div>
+  <!-- Logo container-->
+  <h1 class="main-header__title">
+    <a
+      href="index.html"
+      title="Sociedade da Liga dos Nerds"
+      style="height: 38px"
+      ><img src="assets/logo.png" alt="sociedade da liga dos nerds"
+    /></a>
+  </h1>
+  <div class="container-menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li>
+          <a routerLink="/produtos">Produtos</a>
+        </li>
+        <li>
+          <a routerLink="/carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrinho
+            <span class="badge-carrinho">{{
+              carrinhoService.obtemCarrinho().length
+            }}</span>
+          </a>
+        </li>
+        <li><a>Contato</a></li>
+        <li>
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <form class="search-form">
+      <input type="text" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+</header>
